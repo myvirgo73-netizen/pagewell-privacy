@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagewell 개인정보 처리방침 / Privacy Policy</title>
+<style>
+  :root { --bg:#fbf7f1; --fg:#2b2018; --muted:#6f5f52; --line:#e3d6c5; --accent:#8a5a2b; --card:#fff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#1a1511; --fg:#f1e7da; --muted:#b9a998; --line:#3a2f26; --accent:#e0a458; --card:#241d17; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.75 -apple-system,"Segoe UI","Noto Sans KR","Malgun Gothic",sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 18px 64px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .4rem; padding-top: .6rem; border-top: 1px solid var(--line); color: var(--accent); }
+  p, li { margin: .35rem 0; }
+  ul { padding-left: 1.3rem; }
+  .meta { color: var(--muted); font-size: .92rem; }
+  .lang { display:inline-block; margin: 0 0 1rem; padding: 2px 10px; border:1px solid var(--line); border-radius: 999px; font-size:.85rem; color: var(--muted); background: var(--card); }
+  a { color: var(--accent); }
+  hr.sep { border: 0; border-top: 3px double var(--line); margin: 3rem 0 2rem; }
+</style>
+</head>
+<body>
+<main>
+
+<span class="lang">한국어</span>
+<h1>Pagewell 개인정보 처리방침</h1>
+<p class="meta">시행일: 2026-10-14 · 문의: <a href="mailto:pagewell.km@gmail.com">pagewell.km@gmail.com</a></p>
+
+<h2>1. 기본 원칙</h2>
+<p>Pagewell(이하 "앱")는 사용자의 정보를 외부 서버로 보내지 않습니다. 앱은 광고와 분석 도구를 포함하지 않습니다. 인터넷 권한은 사용자가 "원격 서버" 화면에서 직접 등록한 FTP/FTPS/SFTP 서버에 접속해 파일을 받을 때에만 쓰며, 그 밖의 곳으로는 통신하지 않습니다. 등록한 서버 주소와 아이디, 비밀번호(기기 보안 저장소의 키로 암호화)는 기기 안에만 저장됩니다. 앱이 다루는 모든 정보는 사용자의 기기 안에서만 저장·처리됩니다.</p>
+
+<h2>2. 앱이 기기에 저장하는 정보</h2>
+<ul>
+  <li>읽던 위치, 최근 문서 목록(파일 이름, 경로, 첫 부분 미리보기), 즐겨찾기, 책갈피와 메모, 읽기 통계(읽은 시간)</li>
+  <li>화면 설정, 폴더별 보기 설정, 파일 이름 검색 기록</li>
+  <li>서재에 등록한 폴더 목록(사용자가 폴더 선택창에서 허용한 폴더의 주소와 이름)과 열어 둔 파일 탭</li>
+  <li>중복 파일을 찾을 때 기기 안에서 파일 내용의 지문(해시)과 앞부분 미리보기를 계산합니다. 이 값과 파일 내용은 저장하지 않으며 앱 밖으로 보내지 않습니다.</li>
+  <li>파일을 저장하기 전의 백업본(앱 전용 저장 공간)</li>
+  <li>읽던 책 정보(읽던 위치, 최근 문서, 책갈피, 형광펜·메모, 열어 둔 탭 등)의 자동 백업 한 벌(앱 안 데이터베이스, 설정에서 끌 수 있음)</li>
+  <li>앱 잠금을 쓰는 경우 비밀번호를 변환한 값(비밀번호 원문은 저장하지 않음)</li>
+  <li>전자책을 읽기 위해 변환한 임시 텍스트와 압축 해제 임시 파일</li>
+</ul>
+<p>이 정보는 앱을 삭제하면 함께 삭제됩니다.</p>
+
+<h2>3. 앱이 사용하는 권한</h2>
+<ul>
+  <li><strong>모든 파일 접근</strong>(선택): 사용자가 기기의 텍스트·이미지·압축·전자책 파일을 찾아 열 수 있도록 하기 위해서만 사용합니다. 파일 내용을 앱 밖으로 전송하지 않습니다.</li>
+  <li><strong>폴더 접근(시스템 폴더 선택창)</strong>: 사용자가 고른 폴더 안의 파일만 읽고, 사용자가 "휴지통으로" 등을 직접 누른 파일만 옮기거나 지웁니다.</li>
+  <li><strong>다른 앱으로 열기, 클라우드 앱 열기</strong>: 사용자가 고른 앱으로 파일을 넘기거나 그 앱을 실행합니다. 앱이 클라우드 계정에 접속하거나 로그인 정보를 다루지 않습니다.</li>
+  <li><strong>알림, 포그라운드 서비스</strong>: 소리 내어 읽기 중 알림을 표시하고, 화면이 꺼진 상태에서도 읽기를 이어가기 위해 사용합니다.</li>
+  <li><strong>절전 방지(WAKE_LOCK)</strong>: 소리 내어 읽는 동안에만 사용합니다.</li>
+</ul>
+
+<h2>4. 소리 내어 읽기</h2>
+<p>소리 내어 읽기는 기기에 설치된 음성 합성 엔진(예: 구글 TTS, 삼성 TTS)이 처리합니다. 엔진이 온라인 음성을 사용하는 경우 해당 엔진 제공자의 정책에 따라 텍스트가 전송될 수 있으며, 이는 앱이 아니라 엔진의 동작입니다. 기기 내장 음성을 선택하면 외부로 전송되지 않습니다.</p>
+
+<h2>5. 내보내기와 백업</h2>
+<p>사용자가 "내보내기"를 눌러 만든 파일(설정, 최근 문서, 책갈피, 형광펜·메모, 열어 둔 탭 등. 원격 서버 정보와 비밀번호는 포함하지 않습니다)은 사용자가 지정한 위치에 저장되며, 그 이후의 보관과 공유는 사용자가 관리합니다. 앱은 이 파일을 자동으로 전송하지 않습니다.</p>
+
+<h2>6. 제3자 제공과 국외 이전</h2>
+<p>앱은 정보를 제3자에게 제공하거나 국외로 이전하지 않습니다.</p>
+
+<h2>7. 아동</h2>
+<p>앱은 연령과 무관하게 사용할 수 있으나 아동의 개인정보를 별도로 수집하지 않습니다.</p>
+
+<h2>8. 사용자의 권리</h2>
+<p>모든 정보는 기기 안에 있으므로, 앱 설정에서 최근 문서·책갈피·백업을 지우거나 앱을 삭제해 언제든 정보를 삭제할 수 있습니다.</p>
+
+<h2>9. 변경</h2>
+<p>이 방침이 바뀌면 앱 업데이트와 이 문서를 통해 알립니다.</p>
+
+<h2>10. 문의</h2>
+<p><a href="mailto:pagewell.km@gmail.com">pagewell.km@gmail.com</a></p>
+
+<hr class="sep">
+
+<span class="lang" lang="en">English</span>
+<h1 lang="en">Pagewell Privacy Policy</h1>
+<p class="meta" lang="en">Effective date: 2026-10-14 · Contact: <a href="mailto:pagewell.km@gmail.com">pagewell.km@gmail.com</a></p>
+
+<div lang="en">
+<h2>1. Principles</h2>
+<p>Pagewell ("the app") does not send your information to any external server. The app contains no advertising and no analytics tools. The internet permission is used only to connect to FTP, FTPS or SFTP servers that you register yourself on the "Remote server" screen and download files from them; the app communicates with nowhere else. The server address, user name and password you register (the password is encrypted with a key in the device's secure storage) are stored on your device only. All information the app handles is stored and processed on your device.</p>
+
+<h2>2. Information the app stores on your device</h2>
+<ul>
+  <li>Reading positions, the recent files list (file name, path, a short preview of the beginning), favorites, bookmarks and notes, and reading statistics (time read)</li>
+  <li>Display settings, per-folder view settings and file-name search history</li>
+  <li>The list of folders you registered in the library (the address and name of folders you allowed in the system folder picker) and your open file tabs</li>
+  <li>When finding duplicate files, the app calculates a fingerprint (hash) of file contents and a preview of the beginning on your device. These values and file contents are not stored and are not sent outside the app.</li>
+  <li>Backup copies made before saving a file (in the app's private storage)</li>
+  <li>One automatic backup copy of your reading information (reading positions, recent files, bookmarks, highlights and notes, open tabs and so on) in the app's database; it can be turned off in settings</li>
+  <li>If you use the app lock, a transformed value of the password (the password itself is not stored)</li>
+  <li>Temporary text converted to read e-books, and temporary files from extracting archives</li>
+</ul>
+<p>This information is deleted when you uninstall the app.</p>
+
+<h2>3. Permissions the app uses</h2>
+<ul>
+  <li><strong>All files access</strong> (optional): used only so you can find and open text, image, archive and e-book files on your device. File contents are not sent out of the app.</li>
+  <li><strong>Folder access (system folder picker)</strong>: the app reads only files inside the folders you choose, and moves or deletes only files you explicitly act on (for example by tapping "Move to trash").</li>
+  <li><strong>Open with another app / open a cloud app</strong>: hands a file to an app you choose or launches that app. The app does not connect to your cloud account or handle your sign-in information.</li>
+  <li><strong>Notifications and foreground service</strong>: shows a notification while reading aloud and keeps reading while the screen is off.</li>
+  <li><strong>Wake lock</strong>: used only while reading aloud.</li>
+</ul>
+
+<h2>4. Read aloud</h2>
+<p>Reading aloud is handled by the text-to-speech engine installed on your device (for example Google TTS or Samsung TTS). If the engine uses online voices, text may be sent according to that engine provider's policy; this is the behavior of the engine, not of the app. If you choose an on-device voice, nothing is sent outside.</p>
+
+<h2>5. Export and backup</h2>
+<p>Files you create with "Export" (settings, recent files, bookmarks, highlights and notes, open tabs and so on; remote server information and passwords are not included) are saved where you choose, and how they are kept or shared afterwards is up to you. The app does not send these files automatically.</p>
+
+<h2>6. Third parties and international transfer</h2>
+<p>The app does not provide information to third parties and does not transfer it abroad.</p>
+
+<h2>7. Children</h2>
+<p>The app can be used at any age, but it does not collect children's personal information separately.</p>
+
+<h2>8. Your rights</h2>
+<p>Because all information is on your device, you can delete it at any time by clearing recent files, bookmarks and backups in the app's settings or by uninstalling the app.</p>
+
+<h2>9. Changes</h2>
+<p>If this policy changes, we will let you know through an app update and this page.</p>
+
+<h2>10. Contact</h2>
+<p><a href="mailto:pagewell.km@gmail.com">pagewell.km@gmail.com</a></p>
+</div>
+
+</main>
+</body>
+</html>
