@@ -35,11 +35,12 @@
 <h2>2. 앱이 기기에 저장하는 정보</h2>
 <ul>
   <li>읽던 위치, 최근 문서 목록(파일 이름, 경로, 첫 부분 미리보기), 즐겨찾기, 책갈피와 메모, 읽기 통계(읽은 시간)</li>
+  <li>메모장에 직접 적은 메모(제목, 내용, 체크리스트, 고정 여부, 날짜)와 휴지통의 메모. 책과 상관없는 독립 메모이며 앱 안 데이터베이스에만 저장합니다.</li>
   <li>화면 설정, 폴더별 보기 설정, 파일 이름 검색 기록</li>
   <li>서재에 등록한 폴더 목록(사용자가 폴더 선택창에서 허용한 폴더의 주소와 이름)과 열어 둔 파일 탭</li>
   <li>중복 파일을 찾을 때 기기 안에서 파일 내용의 지문(해시)과 앞부분 미리보기를 계산합니다. 이 값과 파일 내용은 저장하지 않으며 앱 밖으로 보내지 않습니다.</li>
   <li>파일을 저장하기 전의 백업본(앱 전용 저장 공간)</li>
-  <li>읽던 책 정보(읽던 위치, 최근 문서, 책갈피, 형광펜·메모, 열어 둔 탭 등)의 자동 백업 한 벌(앱 안 데이터베이스, 설정에서 끌 수 있음)</li>
+  <li>읽던 책 정보(읽던 위치, 최근 문서, 책갈피, 형광펜·메모, 메모장의 메모, 열어 둔 탭 등)의 자동 백업 한 벌(앱 안 데이터베이스, 설정에서 끌 수 있음)</li>
   <li>앱 잠금을 쓰는 경우 비밀번호를 변환한 값(비밀번호 원문은 저장하지 않음)</li>
   <li>전자책을 읽기 위해 변환한 임시 텍스트와 압축 해제 임시 파일</li>
 </ul>
@@ -58,7 +59,8 @@
 <p>소리 내어 읽기는 기기에 설치된 음성 합성 엔진(예: 구글 TTS, 삼성 TTS)이 처리합니다. 엔진이 온라인 음성을 사용하는 경우 해당 엔진 제공자의 정책에 따라 텍스트가 전송될 수 있으며, 이는 앱이 아니라 엔진의 동작입니다. 기기 내장 음성을 선택하면 외부로 전송되지 않습니다.</p>
 
 <h2>5. 내보내기와 백업</h2>
-<p>사용자가 "내보내기"를 눌러 만든 파일(설정, 최근 문서, 책갈피, 형광펜·메모, 열어 둔 탭 등. 원격 서버 정보와 비밀번호는 포함하지 않습니다)은 사용자가 지정한 위치에 저장되며, 그 이후의 보관과 공유는 사용자가 관리합니다. 앱은 이 파일을 자동으로 전송하지 않습니다.</p>
+<p>메모장의 "텍스트 파일로 내보내기"와 "텍스트 파일에서 가져오기"는 사용자가 시스템 선택창에서 고른 폴더·파일만 읽고 씁니다.</p>
+<p>사용자가 "내보내기"를 눌러 만든 파일(설정, 최근 문서, 책갈피, 형광펜·메모, 메모장의 메모, 열어 둔 탭 등. 원격 서버 정보와 비밀번호는 포함하지 않습니다)은 사용자가 지정한 위치에 저장되며, 그 이후의 보관과 공유는 사용자가 관리합니다. 앱은 이 파일을 자동으로 전송하지 않습니다.</p>
 
 <h2>6. 제3자 제공과 국외 이전</h2>
 <p>앱은 책 내용, 형광펜, 메모, 설정을 제3자에게 제공하거나 국외로 이전하지 않습니다. 번역 언어 자료를 처음 받을 때는 구글 플레이 서비스가 연결될 수 있으나, 고른 글은 포함되지 않습니다.</p>
@@ -87,12 +89,13 @@
 
 <h2>2. Information the app stores on your device</h2>
 <ul>
+  <li>Memos you write yourself in the Notepad tab (title, text, checklists, pinned state, dates) and memos in the trash. They are independent of any book and are stored only in the app's database.</li>
   <li>Reading positions, the recent files list (file name, path, a short preview of the beginning), favorites, bookmarks and notes, and reading statistics (time read)</li>
   <li>Display settings, per-folder view settings and file-name search history</li>
   <li>The list of folders you registered in the library (the address and name of folders you allowed in the system folder picker) and your open file tabs</li>
   <li>When finding duplicate files, the app calculates a fingerprint (hash) of file contents and a preview of the beginning on your device. These values and file contents are not stored and are not sent outside the app.</li>
   <li>Backup copies made before saving a file (in the app's private storage)</li>
-  <li>One automatic backup copy of your reading information (reading positions, recent files, bookmarks, highlights and notes, open tabs and so on) in the app's database; it can be turned off in settings</li>
+  <li>One automatic backup copy of your reading information (reading positions, recent files, bookmarks, highlights and notes, Notepad memos, open tabs and so on) in the app's database; it can be turned off in settings</li>
   <li>If you use the app lock, a transformed value of the password (the password itself is not stored)</li>
   <li>Temporary text converted to read e-books, and temporary files from extracting archives</li>
 </ul>
@@ -111,7 +114,8 @@
 <p>Reading aloud is handled by the text-to-speech engine installed on your device (for example Google TTS or Samsung TTS). If the engine uses online voices, text may be sent according to that engine provider's policy; this is the behavior of the engine, not of the app. If you choose an on-device voice, nothing is sent outside.</p>
 
 <h2>5. Export and backup</h2>
-<p>Files you create with "Export" (settings, recent files, bookmarks, highlights and notes, open tabs and so on; remote server information and passwords are not included) are saved where you choose, and how they are kept or shared afterwards is up to you. The app does not send these files automatically.</p>
+<p>The Notepad's "Export as text files" and "Import from text files" only read and write the folders and files you pick in the system picker.</p>
+<p>Files you create with "Export" (settings, recent files, bookmarks, highlights and notes, Notepad memos, open tabs and so on; remote server information and passwords are not included) are saved where you choose, and how they are kept or shared afterwards is up to you. The app does not send these files automatically.</p>
 
 <h2>6. Third parties and international transfer</h2>
 <p>The app does not provide your book contents, highlights, notes or settings to third parties and does not transfer them abroad. When translation language data is downloaded for the first time, Google Play services may be contacted, but the selected text is not included.</p>
